@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 html{
@@ -29,7 +30,7 @@ body {
 .contenedor {
         width: 110%;
         margin: auto;
-        background: #fff;
+        background: #fff9f9;
         max-width: 1060px;
         padding-top: 20px;
         padding-left: 40px;
@@ -86,12 +87,12 @@ body{
     }
 }
 
-@media(min-width:768px) {
+/* @media(min-width:768px) {
     .contenido-chef {
         display: flex;
         justify-content: space-between;
     }
-}
+} */
 
 @media(min-width:768px) {
     .texto-nosotros p{
@@ -385,10 +386,13 @@ video {
 
 .plato {
     flex: 0 0 calc(33.3% - 1rem);
-    border: 1px solid #e1e1e1;
+    border: 2px solid rgba(109,40,217);
     padding: 2rem;
     border-radius: 5px;
-
+    box-shadow: 5px 5px 1px 1px rgba(109,40,217);
+    padding: 2px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .plato h2{

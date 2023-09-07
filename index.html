@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>ERRE Pasteleria Final</title>
 </head>
 <body>
@@ -21,22 +22,22 @@
                     <div class="contenido-header">
                         <a href="#inicio"><img src="img/logo.jpg" alt="Logo"></a>
                         <nav id="nav" class="">
-                            <ul id="links">
-                                <li><a href="#menu" class="seleccionado" onclick="seleccionar(this)">MENÚ</a></li>
-                                <li><a href="#catering" onclick="seleccionar(this)">CATERING</a></li>
-                                <li><a href="#sobrenosotros" onclick="seleccionar(this)">SOBRE NOSOTROS</a></li>
-                                <li><a href="#contacto" onclick="seleccionar(this)" >CONTACTO</a></li>   
+                             <ul id="links"> 
+                                <li><a href="#menu" class="seleccionado">MENÚ</a></li> 
+                                <li><a href="#catering">CATERING</a></li>
+                                <li><a href="#sobrenosotros">SOBRE NOSOTROS</a></li>
+                                <li><a href="#contacto">CONTACTO</a></li>
                             </ul>
                         </nav>
 
                         <!-- Iconos menu -->
-                        <div id="iconos-nav" onclick="responsiveMenu ()">
+                        <div id="iconos-nav" onclick="responsiveMenu()">
                             <i class="fa-solid fa-bars"></i>
                         </div>
 
                         <div class="redes">
-                            <a href=""><i class="uil uil-instagram"></i></a>
-                            <a href="https://wa.me/+5491155940088"><i class="uil uil-whatsapp"></i></a>
+                            <a href="https://instagram.com/erre.pasteleria?igshid=NzZhOTFlYzFmZQ==" target="_blank"><i class="uil uil-instagram"></i></a>
+                            <a href="https://wa.me/+5491155940088" target="_blank"><i class="uil uil-whatsapp"></i></a>
                         </div>
 
                     </div>
@@ -45,16 +46,20 @@
 
         <section id="sobrenosotros" class="chef contenedor"> <!--Empieza sector Chef-->
             <h2>Sobre Nosotros</h2>
-                <div class="contenido-chef">
-                    <div class="texto-chef">
+                <div >
+                    <div class="md:flex flex-row texto-chef">
                         <h3>ERRE Pastelería fue creado para todo aquel que disfrute degustar la más exquisita pastelería artesanal. Trabajamos diariamente en ofrecer un producto acompañado de un servicio de calidad, elaborado con amor y pasión durante todo el proceso, para que llegue a sus paladares un sabor delicioso e irresistible.</h3>
-                        <p>El negocio comenzó poco a poco, creado por la pastelera, Agustina Horak. Empezó a cocinar desde muy chica con sus abuelas, de quien saca su mayor inspiración. A medida que pasó el tiempo, se fue metiendo más adentro en el mundo de los sentidos, los sabores y las experiencias, estudiando en distintas áreas de la gastronomía. Emprendió primeramente con sus amigos y familiares, paulatinamente fue creando esta marca la cual deseamos se expanda para deleitar y agasajar cada vez a más paladares.</p>
-                        <a href="#" class="btn btn-verde">Leer biografia</a>
+                        <div class="imagen-chef">
+                            <img src="img/chef.webp" alt="Foto del chef">
+                        </div>
                     </div>
           
-                    <div class="imagen-chef">
-                        <img src="img/chef.webp" alt="Foto del chef">
+                    
+                    <div class="my-6 mx-12 md:px-32 plato">
+                        <p>El negocio comenzó poco a poco, creado por la pastelera, Agustina Horak. Empezó a cocinar desde muy chica con sus abuelas, de quien saca su mayor inspiración. A medida que pasó el tiempo, se fue metiendo más adentro en el mundo de los sentidos, los sabores y las experiencias, estudiando en distintas áreas de la gastronomía. Emprendió primeramente con sus amigos y familiares, paulatinamente fue creando esta marca la cual deseamos se expanda para deleitar y agasajar cada vez a más paladares.</p>
                     </div>
+
+                    <a href="#" class="btn btn-verde">Leer biografia</a>
                 </div>  
         </section>
 
@@ -68,63 +73,63 @@
                 <button id="catering" class="catering btn btn-verde">Catering</button>
             </div>
             <div class="platos">
-                <div class="plato" data-plato="alfajores"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Alfajor1.jpg" alt="alfajor">
-                    <h2>Alfajor</h2>
+                <div  class="plato" data-plato="alfajores"> <!--data para poder separar por platos-->
+                    <img src="./img/fotos-finales/Alfajor1.jpg" alt="alfajor">
+                    <h2 class="font-black">Alfajor</h2>
                     <p>Exquisito alfajor con relleno de Dulce de Leche</p>
                 </div>
 
                 <div class="plato" data-plato="alfajores"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Alfajor3.jpg" alt="alfajor">
-                    <h2>Alfajor</h2>
+                    <img src="./img/fotos-finales/Alfajor3.jpg" alt="alfajor">
+                    <h2 class="font-black">Alfajor</h2>
                     <p>Exquisito alfajor con relleno de Mousse de Chocolate</p>
                 </div>
 
                 <div class="plato" data-plato="tortas"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Tortas3.jpg" alt="torta">
-                    <h2>Torta</h2>
+                    <img src="./img/fotos-finales/Tortas3.jpg" alt="torta">
+                    <h2 class="font-black">Torta</h2>
                     <p>Exquisita torta de Chocolate y Avellanas</p>
                 </div>
 
                 <div class="plato" data-plato="tortas"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Tortas12.jpg" alt="torta">
-                    <h2>Torta</h2>
+                    <img src="./img/fotos-finales/Tortas12.jpg" alt="torta">
+                    <h2 class="font-black">Torta</h2>
                     <p>Exquisita torta Red Velvet</p>
                 </div>
 
                 <div class="plato" data-plato="macarons"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Macarons10.jpg" alt="macaron">
-                    <h2>Macarons</h2>
+                    <img src="./img/fotos-finales/Macarons10.jpg" alt="macaron">
+                    <h2 class="font-black">Macarons</h2>
                     <p>Delicioso Macaron de Dulce de leche</p>
                 </div>
 
                 <div class="plato" data-plato="macarons"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Macarons9.jpg" alt="macaron">
-                    <h2>Macarons</h2>
+                    <img src="./img/fotos-finales/Macarons9.jpg" alt="macaron">
+                    <h2 class="font-black">Macarons</h2>
                     <p>Delicioso Macaron de Limon</p>
                 </div>
                 
                 <div class="plato" data-plato="macarons"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Macarons8.jpg" alt="macaron">
-                    <h2>Macarons</h2>
+                    <img src="./img/fotos-finales/Macarons8.jpg" alt="macaron">
+                    <h2 class="font-black">Macarons</h2>
                     <p>Delicioso Macaron de Frambuesa</p>
                 </div>
 
                 <div class="plato" data-plato="catering"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Catering.jpg" alt="catering">
-                    <h2>Servicios de Catering</h2>
+                    <img src="./img/fotos-finales/Catering.jpg" alt="catering">
+                    <h2 class="font-black">Servicios de Catering</h2>
                     <p>Cumpleaños, evento empresariales o familiares</p>
                 </div>
 
                 <div class="plato" data-plato="catering"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Desayunos1.jpg" alt="catering">
-                    <h2>Servicios de Catering</h2>
+                    <img src="./img/fotos-finales/Desayunos1.jpg" alt="catering">
+                    <h2 class="font-black">Servicios de Catering</h2>
                     <p>Desayunos o sorpresas</p>
                 </div>
 
                 <div class="plato" data-plato="catering"> <!--data para poder separar por platos-->
-                    <img src="./img/Fotos Finales/Catering.jpg" alt="catering">
-                    <h2>Servicios de Catering</h2>
+                    <img src="./img/fotos-finales/Catering.jpg" alt="catering">
+                    <h2 class="font-black">Servicios de Catering</h2>
                     <p>Meriendas o regalos Ejecutivos</p>
                 </div>
             </div>
@@ -203,8 +208,7 @@
         <p>Todos los derechos reservados &copy; 2023 ERRE Pasteleria, Desarrollado por Agus Horak</p>
     </footer>
 
-     
-    <a href="https://wa.me/+5491155940088" class="whatsapp-button"><i class="uil uil-whatsapp"></i></a> <!-- Boton Whatsapp -->
+    <a href="https://wa.me/+5491155940088" target="_blank" class="whatsapp-button bg-green-300"><i class="uil uil-whatsapp"></i></a> <!-- Boton Whatsapp -->
 
 <script src="app.js"></script>
 </body>
